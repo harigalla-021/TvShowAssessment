@@ -1,17 +1,16 @@
-# tvshow-assessment
-A single‐page web application which allows users to get information on their favorite Tv Shows. External 
-links to get more information are also provided.
+# Tv Show Application
+This is open TV shows application that allows users to view list of all TV shows and their all details. This application usage data from "TV Maza" through API "http://www.tvmaze.com/".
+
+Note: If you face CORS issue, please switch to open network.
 
 ## Installation of vue/cli
-Note: You need administrator privileges to execute these unless npm was installed on your system through a Node.js version manager.
+This application required Vue cli please install latest version. 
 
 ```
 npm install -g @vue/cli
-
 ```
-Note: You can check you have the right version with this command:
-vue --version
-
+Note: Please check Vue CLI is successfully installed. by running command: vue --v
+if it prints version. you successfully installed Vue Cli
 
 ## Project setup
 ```
@@ -37,17 +36,29 @@ npm run test:unit
 ```
 npm run lint
 ```
+### Project Guidelines
+* This application using camelCase naming conventions for Method Naming, variable, object declaration,
+Example : getResults() , tvShowName etc..
 
-### Project dependencies and devDependencies ------------
-1. axios:
-   Promise based HTTP client for the browser.
-   Please refer below url for more details:
-   https://www.npmjs.com/package/axios   
+* This application usage samll sase for Folder Naming Convention, Example : views, components.
+and for files Pascal case for files exaple: DashBoard.vue, Details.vue
 
-2. vuetify:
-   Vuetify is a Vue UI Library with beautifully handcrafted Material Components. No design skills required — everything you need to create amazing applications is at your fingertips. More information:
-   https://vuetifyjs.com/en/introduction/guide/
+* Vuex Standards: 
+    * mutations: All Caps example: ALL_TV_SHOWS
+    * actions: CamelCase example: getTvShowDetailsById 
+    * state: CamelCase ex: tvShow
 
+### Project dependencies
+* Vue Material Design Component Framework — [Vuetify.js](https://vuetifyjs.com/en/).
+* Axios (Promise based HTTP client for the browser) — [Axios](https://www.npmjs.com/package/axios/).
+* Vuex is a state management pattern + library for Vue.js — [Vuex ](https://vuex.vuejs.org/).
+* Jest for unit testing — [jest](https://jestjs.io/).
+* Prettier for single quote & without semi colon
+* It usage "rem" as CSS unit, which is related to root font size. I have set 10px as root font size.
+* Node SASS  is required
+   ```
+   npm install --save-dev node-sass
+   ```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

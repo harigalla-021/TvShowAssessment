@@ -1,83 +1,62 @@
 <template>
-  <div class="home">
-    <v-container grid-list-xl>
-      <v-layout-row>
-        <h1 class="display-1 font-weight-light">A few popular shows for you</h1>
-      </v-layout-row>
-      <br />
-      <br />
-      <v-layout row>
-        <v-flex xs4 v-for="(show,i) in shows.slice(0,15)" :key="i">
-          <v-card max-width="374" elevation-15>
-            <v-img :src="show.image.original" aspect-ratio="0.75" v-if="show.image.original"></v-img>
+  <div class="grey lighten-5">
+    <v-container>
+      <v-row no-gutters :class="$style.dashBoardWrapper">
+        <v-col cols="12" sm="12" md="12" :class="$style.category">
+          <!-- heading compoent -->
+          <heading>Tv Shows</heading>
 
-            <v-card-title v-if="show.name">
-              {{show.name}}
-              <v-spacer></v-spacer>
-              <v-icon v-if="show.language">mdi-volume-high</v-icon>
-              {{show.language}}
-            </v-card-title>
-
-            <v-card-text>
-              <v-row align="center" class="mx-0">
-                <div>
-                  <v-rating
-              v-model="show.rating.average"
-              color="amber"
-              dense
-              half-increments
-              readonly
-              size="14"
-              length="10"
-            ></v-rating>
-                </div>
-                <div class="grey--text ml-4" v-if="show.rating.average">{{show.rating.average}}</div>
-                <div v-if="show.rating.average==null" class="grey--text ml-4">No Rating</div>
-              </v-row>
-
-              <v-row align="center" class="mx-0" v-if="show.genres">
-                <div class="my-4 subtitle-1" v-for="(genre,j) in show.genres" :key="j">
-                  <v-icon>mdi-tag</v-icon>
-                  {{genre}}
-                </div>
-              </v-row>
-            </v-card-text>
-
-            <v-divider class="mx-4"></v-divider>
-
-            <v-card-actions>
-              <v-btn color="orange" text :href="`/about/${show.id}`">View Details</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-flex>
-      </v-layout>
+          <v-row no-gutters>
+            <v-col
+              :key="index"
+              v-for="(shows, index) in getAllTvShows"
+              cols="12"
+              lg="2"
+              md="2"
+              sm="4"
+              xs="12"
+              :class="$style.shows"
+            >
+              <router-link
+                :to="{ name: 'Details', params: { id: `${shows.id}` } }"
+              >
+                <!-- TV show Component -->
+                <tvshows :tvShow="shows" />
+              </router-link>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
-
-
 <script>
-import { getAllShows } from "@/service/shows.service.js";
-export default {
-  name: "Home",
+import { mapGetters } from 'vuex'
 
-  data: () => ({
-    shows: [],
-    data: []
-  }),
-  created() {
-    getAllShows()
-      .then(resp => {
-        this.data = resp.data;
-        this.data.forEach(element => {
-          if (element.rating.average > 8) {      // display shows only above 8 rating
-            this.shows.push(element);
-          }
-        });
-      })
-      .catch(err => {
-        alert(err);
-      });
+export default {
+  name: 'Dashboard',
+  components: {
+    heading: () => import('@/shared/Heading'), // Lazy Loading
+    tvshows: () => import('@/components/TvShows') // Lazy Loading
+  },
+  computed: {
+    ...mapGetters('dashboard', ['getAllTvShows'])
+  },
+  methods: {
+    getTvShows() {
+      this.$store.dispatch('dashboard/getTvShows')
+    }
+  },
+  mounted() {
+    this.getTvShows()
   }
-};
+}
 </script>
+<style lang="scss" module>
+.dashBoardWrapper {
+  margin-top: 2rem;
+  .shows {
+    margin-top: 2.5rem;
+  }
+}
+</style>
