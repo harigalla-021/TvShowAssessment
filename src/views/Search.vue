@@ -11,35 +11,35 @@
       </v-row>
       <v-layout row v-if="shows">
         <v-flex xs4 v-for="(show,i) in shows" :key="i">
-          <v-card :loading="loading" max-width="374" elevation-15 >
+          <v-card max-width="374" elevation-15>
             <v-img v-if="show.show.image" :src="show.show.image.original" aspect-ratio="0.75"></v-img>
-            <v-img
-                v-if="show.show.image==null"
-                src="@/assets/NoImageAvailable.png"
-                aspect-ratio="1"
-              ></v-img>
+            <v-img v-else src="@/assets/NoImageAvailable.png" aspect-ratio="1"></v-img>
             <v-card-title v-if="show.show.name">
               {{show.show.name}}
               <v-spacer></v-spacer>
-              <v-icon v-if="show.show.language">mdi-volume-high</v-icon>
-              {{show.show.language}}
+              <div v-if="show.show.language">
+                <v-icon>mdi-volume-high</v-icon>
+                {{show.show.language}}
+              </div>
             </v-card-title>
 
             <v-card-text>
               <v-row align="center" class="mx-0">
                 <div>
                   <v-rating
-              v-model="show.show.rating.average"
-              color="amber"
-              dense
-              half-increments
-              readonly
-              size="14"
-              length="10"
-              v-if="show.show.rating.average"
-            ></v-rating>
+                    v-model="show.show.rating.average"
+                    color="amber"
+                    dense
+                    half-increments
+                    readonly
+                    size="14"
+                    length="10"
+                  >{{show.show.rating.average}}</v-rating>
                 </div>
-                <div class="grey--text ml-4" v-if="show.show.rating.average">{{show.show.rating.average}}</div>
+                <div
+                  class="grey--text ml-4"
+                  v-if="show.show.rating.average"
+                >{{show.show.rating.average}}</div>
                 <div v-else class="grey--text ml-4">No Rating</div>
               </v-row>
 
@@ -54,12 +54,11 @@
             <v-divider class="mx-4"></v-divider>
 
             <v-card-actions>
-              <v-btn color="orange" text :href="`/about/${show.show.id}`">View Details</v-btn>
+              <v-btn v-if="show.show.id" color="orange" text :href="`/about/${show.show.id}`">View Details</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
       </v-layout>
-      <!-- {{shows}} -->
     </v-container>
   </div>
 </template>
@@ -71,7 +70,6 @@ export default {
 
   data: () => ({
     shows: null,
-    loading: false,
     search: null
   }),
   created() {
@@ -85,7 +83,6 @@ export default {
     searchShows() {
       getShowsByName(this.search)
         .then(resp => {
-          alert(`yes ${resp.data}`)
           this.shows = resp.data;
         })
         .catch(err => alert(`${err}`));

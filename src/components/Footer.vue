@@ -1,7 +1,7 @@
 <template>
   <v-footer color="primary">
-    <vcard align-center>
-      <v-card-text class="white--text text-md-center">
+    <vcard>
+      <v-card-text class="white--text ">
         &copy;2020 —
         <strong>TvShows Page</strong>
       </v-card-text>

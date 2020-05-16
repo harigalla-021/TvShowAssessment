@@ -1,30 +1,31 @@
 <template>
   <v-app>
-    <AppHeader />
-
-    <div :class="$style.search">
-      <search />
-    </div>
-
-    <main>
+    <header>
+      <app-header />
+    </header>
+    <v-content>
       <router-view />
-    </main>
+    </v-content>
+    <footer>
+      <app-footer />
+    </footer>
   </v-app>
 </template>
 
 <script>
+import AppHeader from "./components/Header.vue";
+import AppFooter from "./components/Footer.vue";
+
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
-    AppHeader: () => import('@/shared/AppHeader'), // Lazy Loading
-    search: () => import('@/shared/Search') // Lazy Loading
-  }
-}
+    AppHeader,
+    AppFooter
+  },
+
+  data: () => ({
+    //
+  })
+};
 </script>
-<style lang="scss" module>
-.search {
-  padding: 2rem 0;
-  border-bottom: 0.1rem solid #eee;
-  @include flexCenter;
-}
-</style>
