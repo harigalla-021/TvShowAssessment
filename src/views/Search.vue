@@ -3,7 +3,7 @@
     <v-container grid-list-xl>
       <v-row>
         <v-col>
-          <v-text-field v-model="search" label=" Show Name" outlined></v-text-field>
+          <v-text-field v-model="search" label=" Show Name" outlined class="text-1"></v-text-field>
         </v-col>
         <v-col offset-xl>
           <v-btn class="yellow" @click="searchShows" :disabled="!search">Search</v-btn>
@@ -66,7 +66,7 @@
 <script>
 import { getShowsByName } from "@/service/shows.service.js";
 export default {
-  name: "Home",
+  name: "Search",
 
   data: () => ({
     shows: null,
