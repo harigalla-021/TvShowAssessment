@@ -8,7 +8,7 @@
       <v-spacer></v-spacer>
 
       <v-col cols="12" sm="2">
-        <v-btn href="/search" text>
+        <v-btn href="/search" text class="btn-1">
           <span>Search for a Show</span>
           <v-icon>mdi-open-in-new</v-icon>
         </v-btn>

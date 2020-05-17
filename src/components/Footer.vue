@@ -1,11 +1,9 @@
 <template>
   <v-footer color="primary">
-    <vcard>
-      <v-card-text class="white--text ">
-        &copy;2020 —
-        <strong>TvShows Page</strong>
-      </v-card-text>
-    </vcard>
+    <v-col class="white--text">
+      &copy;2020 —
+      <strong>TvShows Page</strong>
+    </v-col>
   </v-footer>
 </template>
 

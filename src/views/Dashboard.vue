@@ -22,15 +22,14 @@
               <v-row align="center" class="mx-0">
                 <div>
                   <v-rating
-              v-model="show.rating.average"
-              color="amber"
-              dense
-              half-increments
-              readonly
-              size="14"
-              length="10"
-              v-if="show.rating.average"
-            ></v-rating>
+                    v-model="show.rating.average"
+                    color="amber"
+                    dense
+                    half-increments
+                    readonly
+                    size="14"
+                    length="10"
+                  >{{show.rating.average}}</v-rating>
                 </div>
                 <div class="grey--text ml-4" v-if="show.rating.average">{{show.rating.average}}</div>
                 <div v-else class="grey--text ml-4">No Rating</div>
@@ -71,14 +70,30 @@ export default {
       .then(resp => {
         this.data = resp.data;
         this.data.forEach(element => {
-          if (element.rating.average > 8) {      // display shows only above 8 rating
+          if (element.rating.average > 8) {
+            // display shows only above 8 rating
             this.shows.push(element);
           }
+          this.shows = this.shuffleArray(this.shows);
         });
       })
       .catch(err => {
         alert(err);
       });
+  },
+  methods: {
+    shuffleArray(arr) {
+      let counter = arr.length;
+
+      while (counter > 0) {
+        let index = Math.floor(Math.random() * counter);
+        counter--;
+        let temp = arr[counter];
+        arr[counter] = arr[index];
+        arr[index] = temp;
+      }
+      return arr;
+    }
   }
 };
 </script>

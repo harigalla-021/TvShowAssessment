@@ -6,7 +6,7 @@
           <v-text-field v-model="search" label=" Show Name" outlined></v-text-field>
         </v-col>
         <v-col offset-xl>
-          <v-btn class="yellow" @click="searchShows">Search</v-btn>
+          <v-btn class="yellow" @click="searchShows" :disabled="!search">Search</v-btn>
         </v-col>
       </v-row>
       <v-layout row v-if="shows">
