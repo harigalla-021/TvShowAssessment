@@ -38,4 +38,8 @@ describe('Testing Header.vue', () => {
         expect(field.exists()).toBe(true);
     });
 
+    it('existence of alertErr method', () => {
+        expect(searchWrap.vm.alertErr).toBeDefined();
+    });
+
 })
