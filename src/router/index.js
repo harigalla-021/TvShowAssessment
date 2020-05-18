@@ -22,7 +22,12 @@ Vue.use(VueRouter)
     path: '/search',
     name: 'Search',
     component: () => import('../views/Search.vue')
-  }
+  },
+  {
+    path: "*",
+    name: 'Dashboard',
+    component: Dashboard
+  },
 ]
 
 const router = new VueRouter({
