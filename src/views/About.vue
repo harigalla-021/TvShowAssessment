@@ -92,9 +92,6 @@
         </v-layout>
       </v-container>
     </v-container>
-    <!-- <v-container v-else>
-      <h1 class="display-3">Sorry! Details not Avaliable</h1>
-    </v-container>-->
   </div>
 </template>
 
@@ -109,7 +106,7 @@ export default {
     crew: null
   }),
   created() {
-    getShow(this.$route.params.id)
+    getShow(this.$route.params.id)    // getting show data using id from url
       .then(resp => {
         this.show = resp.data;
         if (resp.data._embedded) {

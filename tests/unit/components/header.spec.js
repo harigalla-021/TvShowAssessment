@@ -31,20 +31,15 @@ describe('Testing Header.vue', () => {
         expect(headWrap.html()).toContain("v-spacer-stub")
     });
 
-    it('existence of vbtn', () => {
+    it('test existence of vbtns', () => {
         let btn1 = headWrap.find('.primary');
         expect(btn1.exists()).toBe(true);
-        // expect(btn.element.href).toMatch(/items\/\d+\/edit/);
         let btn2 = headWrap.find('.btn-1');
         expect(btn2.exists()).toBe(true);
     });
 
     it('should find v-toolbar-title', () => {
         expect(headWrap.html()).toContain("v-toolbar-title-stub")
-    });
-
-    it('should find v-col', () => {
-        expect(headWrap.html()).toContain("v-col-stub")
     });
 
     it('should find v-icon', () => {

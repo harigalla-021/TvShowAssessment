@@ -2,11 +2,8 @@
   <div class="home">
     <v-container grid-list-xl>
       <v-row>
-        <v-col>
+        <v-col cols="8">
           <v-text-field v-model="search" label=" Show Name" outlined class="text-1"></v-text-field>
-        </v-col>
-        <v-col offset-xl>
-          <v-btn class="yellow" @click="searchShows" :disabled="!search">Search</v-btn>
         </v-col>
       </v-row>
       <v-layout row v-if="shows">
@@ -54,7 +51,12 @@
             <v-divider class="mx-4"></v-divider>
 
             <v-card-actions>
-              <v-btn v-if="show.show.id" color="orange" text :href="`/about/${show.show.id}`">View Details</v-btn>
+              <v-btn
+                v-if="show.show.id"
+                color="orange"
+                text
+                :href="`/about/${show.show.id}`"
+              >View Details</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -78,15 +80,6 @@ export default {
         this.shows = resp.data;
       })
       .catch(err => alert(`${err}`));
-  },
-  methods: {
-    searchShows() {
-      getShowsByName(this.search)
-        .then(resp => {
-          this.shows = resp.data;
-        })
-        .catch(err => alert(`${err}`));
-    }
   },
   watch: {
     search() {

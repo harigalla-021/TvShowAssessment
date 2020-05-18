@@ -9,14 +9,11 @@ describe('Testing Header.vue', () => {
     let searchWrap;
     const localVue = createLocalVue();
     const router = new VueRouter({ routes });
-    const searchShows = jest.fn();
 
     beforeEach(() => {
         localVue.use(Vuetify);
         searchWrap = shallowMount(Search, {
-            localVue, router, methods: {
-                searchShows() { }
-            }
+            localVue, router
         })
     })
 
@@ -28,11 +25,6 @@ describe('Testing Header.vue', () => {
         expect(searchWrap.isVueInstance).toBeTruthy();
     })
 
-    it('Testing vbtn', () => {
-        searchWrap.find('.yellow').trigger("click");
-        expect(searchShows).not.toHaveBeenCalled();
-    })
-
     it('it should have a <v-container-stub>', () => {
         expect(searchWrap.html()).toContain("v-container-stub")
     });
@@ -42,7 +34,7 @@ describe('Testing Header.vue', () => {
     });
 
     it('should find v-text-field', () => {
-        let field= searchWrap.find('.text-1')
+        let field = searchWrap.find('.text-1')
         expect(field.exists()).toBe(true);
     });
 

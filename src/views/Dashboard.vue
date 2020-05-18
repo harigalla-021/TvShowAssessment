@@ -74,7 +74,7 @@ export default {
             // display shows only above 8 rating
             this.shows.push(element);
           }
-          this.shows = this.shuffleArray(this.shows);
+          this.shows = this.shuffleArray(this.shows); 
         });
       })
       .catch(err => {
@@ -82,15 +82,15 @@ export default {
       });
   },
   methods: {
-    shuffleArray(arr) {
+    shuffleArray(arr) {             // to get random shows everytime
       let counter = arr.length;
 
       while (counter > 0) {
-        let index = Math.floor(Math.random() * counter);
+        let i = Math.floor(Math.random() * counter);
         counter--;
         let temp = arr[counter];
-        arr[counter] = arr[index];
-        arr[index] = temp;
+        arr[counter] = arr[i];
+        arr[i] = temp;
       }
       return arr;
     }
