@@ -59,7 +59,7 @@
 <script>
 import { getAllShows } from "@/service/shows.service.js";
 export default {
-  name: "Home",
+  name: "Dashboard",
 
   data: () => ({
     shows: [],

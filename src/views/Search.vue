@@ -79,7 +79,7 @@ export default {
       .then(resp => {
         this.shows = resp.data;
       })
-      .catch(err => alert(`${err}`));
+      .catch(err =>this.alertErr(err));
   },
   watch: {
     search() {
@@ -87,7 +87,14 @@ export default {
         .then(resp => {
           this.shows = resp.data;
         })
-        .catch(err => alert(`${err}`));
+        .catch(err => this.alertErr(err));
+    }
+  },
+  methods:
+  {
+    alertErr(err)
+    {
+      alert(err)
     }
   }
 };
