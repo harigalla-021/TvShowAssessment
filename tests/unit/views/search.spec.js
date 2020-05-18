@@ -33,10 +33,17 @@ describe('Testing Header.vue', () => {
         expect(searchShows).not.toHaveBeenCalled();
     })
 
-    it('Testing search box', ()=>{
-        var text = searchWrap.find('.text-1')
-        text.setValue('peaky');
-        expect(searchWrap.vm.search).toBe('peaky')
-      })
+    it('it should have a <v-container-stub>', () => {
+        expect(searchWrap.html()).toContain("v-container-stub")
+    });
+
+    it('should find v-row', () => {
+        expect(searchWrap.html()).toContain("v-row-stub")
+    });
+
+    it('should find v-text-field', () => {
+        let field= searchWrap.find('.text-1')
+        expect(field.exists()).toBe(true);
+    });
 
 })
