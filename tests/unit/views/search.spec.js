@@ -42,4 +42,10 @@ describe('Testing Header.vue', () => {
         expect(searchWrap.vm.alertErr).toBeDefined();
     });
 
+    // it('test watcher', () => {
+    //     const searchSpy= jest.spyOn(Search,'search');
+    //     searchWrap.vm.search="peaky";
+    //     expect(searchSpy).toHaveBeenCalled();
+    // });
+
 })

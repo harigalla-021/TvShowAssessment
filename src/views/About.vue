@@ -45,7 +45,7 @@
         </v-col>
       </v-row>
 
-      <v-row>
+      <v-row class="hidden-xs-only">
         <strong>Official site:</strong>
         <a :href="show.officialSite" target="_blank" v-if="show.officialSite">{{show.officialSite}}</a>
         <v-spacer></v-spacer>
@@ -59,10 +59,8 @@
         <strong>First premiered on:</strong>
         <p v-if="show.premiered">{{show.premiered}}</p>
       </v-row>
-      <br />
-      <br />
-      <h1 class="display-2">Cast</h1>
-      <v-container grid-list-xl>
+      <h1 class="display-2 hidden-xs-only mt-12">Cast</h1>
+      <v-container grid-list-xl class="hidden-xs-only">
         <v-layout row>
           <v-flex xs3 v-for="(cast,i) in crew" :key="i">
             <v-card
@@ -106,14 +104,19 @@ export default {
     crew: null
   }),
   created() {
-    getShow(this.$route.params.id)    // getting show data using id from url
-      .then(resp => {
-        this.show = resp.data;
-        if (resp.data._embedded) {
-          this.crew = resp.data._embedded.cast;
-        }
-      })
-      .catch(err => alert(err));
+    this.displayShow();
+  },
+  methods: {
+    displayShow() {
+      getShow(this.$route.params.id) // getting show data using id from url
+        .then(resp => {
+          this.show = resp.data;
+          if (resp.data._embedded) {
+            this.crew = resp.data._embedded.cast;
+          }
+        })
+        .catch(err => alert(err));
+    }
   }
 };
 </script>

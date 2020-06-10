@@ -1,5 +1,4 @@
-export function allShows()
-{
+export function allShows() {
     return [
         {
             "id": 1,
@@ -389,309 +388,532 @@ export function allShows()
                 }
             }
         },
-    {
-        "id": 8,
-        "url": "http://www.tvmaze.com/shows/8/glee",
-        "name": "Glee",
-        "type": "Scripted",
-        "language": "English",
-        "genres": [
-            "Drama",
-            "Music",
-            "Romance"
-        ],
-        "status": "Ended",
-        "runtime": 60,
-        "premiered": "2009-05-19",
-        "officialSite": "http://www.fox.com/glee",
-        "schedule": {
-            "time": "21:00",
-            "days": [
-                "Tuesday"
-            ]
-        },
-        "rating": {
-            "average": 6.8
-        },
-        "weight": 93,
-        "network": {
-            "id": 4,
-            "name": "FOX",
-            "country": {
-                "name": "United States",
-                "code": "US",
-                "timezone": "America/New_York"
+        {
+            "id": 8,
+            "url": "http://www.tvmaze.com/shows/8/glee",
+            "name": "Glee",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Music",
+                "Romance"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2009-05-19",
+            "officialSite": "http://www.fox.com/glee",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Tuesday"
+                ]
+            },
+            "rating": {
+                "average": 6.8
+            },
+            "weight": 93,
+            "network": {
+                "id": 4,
+                "name": "FOX",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 21704,
+                "thetvdb": 83610,
+                "imdb": "tt1327801"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/73.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/73.jpg"
+            },
+            "summary": "<p><b>Glee </b>is a musical comedy about a group of ambitious and talented young adults in search of strength, acceptance and, ultimately, their voice.</p>",
+            "updated": 1577700824,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/8"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/142185"
+                }
             }
         },
-        "webChannel": null,
-        "externals": {
-            "tvrage": 21704,
-            "thetvdb": 83610,
-            "imdb": "tt1327801"
-        },
-        "image": {
-            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/73.jpg",
-            "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/73.jpg"
-        },
-        "summary": "<p><b>Glee </b>is a musical comedy about a group of ambitious and talented young adults in search of strength, acceptance and, ultimately, their voice.</p>",
-        "updated": 1577700824,
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/shows/8"
+        {
+            "id": 9,
+            "url": "http://www.tvmaze.com/shows/9/revenge",
+            "name": "Revenge",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Thriller",
+                "Mystery"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2011-09-21",
+            "officialSite": null,
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Sunday"
+                ]
             },
-            "previousepisode": {
-                "href": "http://api.tvmaze.com/episodes/142185"
+            "rating": {
+                "average": 7.8
+            },
+            "weight": 96,
+            "network": {
+                "id": 3,
+                "name": "ABC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 28387,
+                "thetvdb": 248837,
+                "imdb": "tt1837642"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/82/206879.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/82/206879.jpg"
+            },
+            "summary": "<p>This is not a story about forgiveness; <b>Revenge</b> is a show about retribution. Meet Emily Thorne, the newest resident of The Hamptons. When she was a little girl (and known as Amanda Clarke) her father, David Clarke, was framed for a horrific crime and subsequently sent to prison. While serving his time, the conspirators plotted and murdered David in order to prevent the truth from coming out. Emily is now back with a new identity and ready to take vengeance on the people that murdered her father and stole her childhood.</p>",
+            "updated": 1577712742,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/9"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/154117"
+                }
+            }
+        },
+        {
+            "id": 10,
+            "url": "http://www.tvmaze.com/shows/10/grimm",
+            "name": "Grimm",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Crime",
+                "Supernatural"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2011-10-28",
+            "officialSite": "http://www.nbc.com/grimm",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 8.5
+            },
+            "weight": 94,
+            "network": {
+                "id": 1,
+                "name": "NBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 28352,
+                "thetvdb": 248736,
+                "imdb": "tt1830617"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/69/174906.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/69/174906.jpg"
+            },
+            "summary": "<p><b>Grimm </b>is a drama series inspired by the classic Grimm Brothers' Fairy Tales. After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms\", he increasingly finds his responsibilities as a detective at odds with his new responsibilities as a Grimm.</p>",
+            "updated": 1573665144,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/10"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1009811"
+                }
+            }
+        },
+        {
+            "id": 11,
+            "url": "http://www.tvmaze.com/shows/11/gotham",
+            "name": "Gotham",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Crime"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2014-09-22",
+            "officialSite": "http://www.fox.com/gotham",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": 7.7
+            },
+            "weight": 97,
+            "network": {
+                "id": 4,
+                "name": "FOX",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 38049,
+                "thetvdb": 274431,
+                "imdb": "tt3749900"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/189/474715.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/189/474715.jpg"
+            },
+            "summary": "<p>The good. The evil. The beginning.</p><p>Everyone knows the name Commissioner Gordon. He is one of the crime world's greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon's story and his rise from rookie detective to Police Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham City, the spawning ground of the world's most iconic villains? And what circumstances created them – the larger-than-life personas who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?</p><p><b>Gotham </b>is an origin story of the great DC Comics Super-Villains and vigilantes, revealing an entirely new chapter that has never been told. It follows one cop's rise through a dangerously corrupt city teetering between good and evil, and chronicles the birth of one of the most popular super heroes of our time.</p>",
+            "updated": 1576077598,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/11"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1616387"
+                }
+            }
+        },
+        {
+            "id": 12,
+            "url": "http://www.tvmaze.com/shows/12/lost-girl",
+            "name": "Lost Girl",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Fantasy",
+                "Horror"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2010-09-12",
+            "officialSite": "http://www.showcase.ca/lostgirl",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.1
+            },
+            "weight": 97,
+            "network": {
+                "id": 6,
+                "name": "Showcase",
+                "country": {
+                    "name": "Canada",
+                    "code": "CA",
+                    "timezone": "America/Halifax"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 26401,
+                "thetvdb": 182061,
+                "imdb": "tt1429449"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/137.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/137.jpg"
+            },
+            "summary": "<p><b>Lost Girl</b> follows supernatural seductress Bo, a Succubus who feeds on the sexual energy of humans. Growing up with human parents, Bo had no reason to believe she was anything other than the girl next door — until she drained her boyfriend to death in their first sexual encounter. Now she has hit the road alone and afraid. <br /> She discovers she is one of the Fae, creatures of legend and folklore, who pass as humans while feeding off them secretly and in different ways, as they have for millennia. Relieved yet horrified to find out that she is not alone, Bo decides to take the middle path between the humans and the Fae while embarking on a personal mission to unlock the secrets of her origin.</p><p>With the help of her human sidekick, Kenzi, and Dyson, a sexy police detective, Bo takes on a challenge every week helping a Fae or human client who comes to her to solve a mystery, or to right a wrong.</p>",
+            "updated": 1587112172,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/12"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/316120"
+                }
+            }
+        },
+        {
+            "id": 13,
+            "url": "http://www.tvmaze.com/shows/13/the-flash",
+            "name": "The Flash",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Science-Fiction"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2014-10-07",
+            "officialSite": "http://www.cwtv.com/shows/the-flash/",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Tuesday"
+                ]
+            },
+            "rating": {
+                "average": 7.9
+            },
+            "weight": 100,
+            "network": {
+                "id": 5,
+                "name": "The CW",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 36939,
+                "thetvdb": 279121,
+                "imdb": "tt3107288"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/210/527217.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/210/527217.jpg"
+            },
+            "summary": "<p>After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash!</p>",
+            "updated": 1589510669,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/13"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1808699"
+                }
+            }
+        },
+        {
+            "id": 14,
+            "url": "http://www.tvmaze.com/shows/14/continuum",
+            "name": "Continuum",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Crime",
+                "Science-Fiction"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2012-05-27",
+            "officialSite": "http://www.showcase.ca/Continuum",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.2
+            },
+            "weight": 94,
+            "network": {
+                "id": 6,
+                "name": "Showcase",
+                "country": {
+                    "name": "Canada",
+                    "code": "CA",
+                    "timezone": "America/Halifax"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 30789,
+                "thetvdb": 258171,
+                "imdb": "tt1954347"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/184.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/184.jpg"
+            },
+            "summary": "<p><b>Continuum </b>is a one-hour police drama centered on Kiera Cameron, a regular cop from 65 years in the future who finds herself trapped in present day Vancouver. She is alone, a stranger in a strange land, and has eight of the most ruthless criminals from the future, known as Liber8, loose in the city.</p><p>Lucky for Kiera, through the use of her CMR (cellular memory recall), a futuristic liquid chip technology implanted in her brain, she connects with Alec Sadler, a seventeen-year-old tech genius. When Kiera calls and Alec answers, a very unique partnership begins.</p><p>Kiera's first desire is to get \"home.\" But until she figures out a way to do that, she must survive in our time period and use all the resources available to her to track and capture the terrorists before they alter history enough to change the course of the future. After all, what's the point of going back if the future isn't the one you left?</p>",
+            "updated": 1573153509,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/14"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/228308"
+                }
+            }
+        },
+        {
+            "id": 15,
+            "url": "http://www.tvmaze.com/shows/15/constantine",
+            "name": "Constantine",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Horror"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2014-10-24",
+            "officialSite": "https://www.nbc.com/constantine",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7.5
+            },
+            "weight": 84,
+            "network": {
+                "id": 1,
+                "name": "NBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 38109,
+                "thetvdb": 273690,
+                "imdb": "tt3489184"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/154.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/154.jpg"
+            },
+            "summary": "<p>Based on the wildly popular comic book series \"Hellblazer\" from DC Comics, seasoned demon hunter and master of the occult John Constantine is armed with a ferocious knowledge of the dark arts and a wickedly naughty wit. He fights the good fight - or at least he did. With his soul already damned to hell, he's decided to abandon his campaign against evil until a series of events thrusts him back into the fray, and he'll do whatever it takes to protect the innocent. With the balance of good and evil on the line‎, <b>Constantine </b>will use his skills to travel the country, find the supernatural terrors that threaten our world and send them back where they belong. After that, who knows... maybe there's hope for him and his soul after all.</p>",
+            "updated": 1573607936,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/15"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/122719"
+                }
+            }
+        },
+        {
+            "id": 16,
+            "url": "http://www.tvmaze.com/shows/16/penny-dreadful",
+            "name": "Penny Dreadful",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Horror",
+                "Thriller",
+                "Supernatural"
+            ],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2014-05-11",
+            "officialSite": "http://www.sho.com/penny-dreadful",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": 8.3
+            },
+            "weight": 98,
+            "network": {
+                "id": 9,
+                "name": "Showtime",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 34172,
+                "thetvdb": 265766,
+                "imdb": "tt2628232"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/48/122237.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/48/122237.jpg"
+            },
+            "summary": "<p>Some of literature's most terrifying characters, including Dr. Frankenstein and his monster, Dorian Gray, and iconic figures from the novel Dracula are lurking in the darkest corners of Victorian London. They are joined by a core of original characters in a complex, frightening new narrative. <b>Penny Dreadful </b>is a psychological thriller filled with dark mystery and suspense, where personal demons from the past can be stronger than vampires, evil spirits and immortal beasts.</p>",
+            "updated": 1573154238,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/16"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/766196"
+                }
             }
         }
-    },
-    {
-        "id": 9,
-        "url": "http://www.tvmaze.com/shows/9/revenge",
-        "name": "Revenge",
+    ]
+}
+
+export function getShow() {
+    return {
+        "id": 45,
+        "url": "http://www.tvmaze.com/shows/45/ncis-new-orleans",
+        "name": "NCIS: New Orleans",
         "type": "Scripted",
         "language": "English",
         "genres": [
             "Drama",
-            "Thriller",
-            "Mystery"
+            "Crime"
         ],
-        "status": "Ended",
+        "status": "Running",
         "runtime": 60,
-        "premiered": "2011-09-21",
-        "officialSite": null,
+        "premiered": "2014-09-23",
+        "officialSite": "http://www.cbs.com/shows/ncis-new-orleans/",
         "schedule": {
             "time": "22:00",
             "days": [
                 "Sunday"
-            ]
-        },
-        "rating": {
-            "average": 7.8
-        },
-        "weight": 96,
-        "network": {
-            "id": 3,
-            "name": "ABC",
-            "country": {
-                "name": "United States",
-                "code": "US",
-                "timezone": "America/New_York"
-            }
-        },
-        "webChannel": null,
-        "externals": {
-            "tvrage": 28387,
-            "thetvdb": 248837,
-            "imdb": "tt1837642"
-        },
-        "image": {
-            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/82/206879.jpg",
-            "original": "http://static.tvmaze.com/uploads/images/original_untouched/82/206879.jpg"
-        },
-        "summary": "<p>This is not a story about forgiveness; <b>Revenge</b> is a show about retribution. Meet Emily Thorne, the newest resident of The Hamptons. When she was a little girl (and known as Amanda Clarke) her father, David Clarke, was framed for a horrific crime and subsequently sent to prison. While serving his time, the conspirators plotted and murdered David in order to prevent the truth from coming out. Emily is now back with a new identity and ready to take vengeance on the people that murdered her father and stole her childhood.</p>",
-        "updated": 1577712742,
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/shows/9"
-            },
-            "previousepisode": {
-                "href": "http://api.tvmaze.com/episodes/154117"
-            }
-        }
-    },
-    {
-        "id": 10,
-        "url": "http://www.tvmaze.com/shows/10/grimm",
-        "name": "Grimm",
-        "type": "Scripted",
-        "language": "English",
-        "genres": [
-            "Drama",
-            "Crime",
-            "Supernatural"
-        ],
-        "status": "Ended",
-        "runtime": 60,
-        "premiered": "2011-10-28",
-        "officialSite": "http://www.nbc.com/grimm",
-        "schedule": {
-            "time": "20:00",
-            "days": [
-                "Friday"
-            ]
-        },
-        "rating": {
-            "average": 8.5
-        },
-        "weight": 94,
-        "network": {
-            "id": 1,
-            "name": "NBC",
-            "country": {
-                "name": "United States",
-                "code": "US",
-                "timezone": "America/New_York"
-            }
-        },
-        "webChannel": null,
-        "externals": {
-            "tvrage": 28352,
-            "thetvdb": 248736,
-            "imdb": "tt1830617"
-        },
-        "image": {
-            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/69/174906.jpg",
-            "original": "http://static.tvmaze.com/uploads/images/original_untouched/69/174906.jpg"
-        },
-        "summary": "<p><b>Grimm </b>is a drama series inspired by the classic Grimm Brothers' Fairy Tales. After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms\", he increasingly finds his responsibilities as a detective at odds with his new responsibilities as a Grimm.</p>",
-        "updated": 1573665144,
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/shows/10"
-            },
-            "previousepisode": {
-                "href": "http://api.tvmaze.com/episodes/1009811"
-            }
-        }
-    },
-    {
-        "id": 11,
-        "url": "http://www.tvmaze.com/shows/11/gotham",
-        "name": "Gotham",
-        "type": "Scripted",
-        "language": "English",
-        "genres": [
-            "Drama",
-            "Action",
-            "Crime"
-        ],
-        "status": "Ended",
-        "runtime": 60,
-        "premiered": "2014-09-22",
-        "officialSite": "http://www.fox.com/gotham",
-        "schedule": {
-            "time": "20:00",
-            "days": [
-                "Thursday"
             ]
         },
         "rating": {
             "average": 7.7
         },
-        "weight": 97,
-        "network": {
-            "id": 4,
-            "name": "FOX",
-            "country": {
-                "name": "United States",
-                "code": "US",
-                "timezone": "America/New_York"
-            }
-        },
-        "webChannel": null,
-        "externals": {
-            "tvrage": 38049,
-            "thetvdb": 274431,
-            "imdb": "tt3749900"
-        },
-        "image": {
-            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/189/474715.jpg",
-            "original": "http://static.tvmaze.com/uploads/images/original_untouched/189/474715.jpg"
-        },
-        "summary": "<p>The good. The evil. The beginning.</p><p>Everyone knows the name Commissioner Gordon. He is one of the crime world's greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon's story and his rise from rookie detective to Police Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham City, the spawning ground of the world's most iconic villains? And what circumstances created them – the larger-than-life personas who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?</p><p><b>Gotham </b>is an origin story of the great DC Comics Super-Villains and vigilantes, revealing an entirely new chapter that has never been told. It follows one cop's rise through a dangerously corrupt city teetering between good and evil, and chronicles the birth of one of the most popular super heroes of our time.</p>",
-        "updated": 1576077598,
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/shows/11"
-            },
-            "previousepisode": {
-                "href": "http://api.tvmaze.com/episodes/1616387"
-            }
-        }
-    },
-    {
-        "id": 12,
-        "url": "http://www.tvmaze.com/shows/12/lost-girl",
-        "name": "Lost Girl",
-        "type": "Scripted",
-        "language": "English",
-        "genres": [
-            "Drama",
-            "Fantasy",
-            "Horror"
-        ],
-        "status": "Ended",
-        "runtime": 60,
-        "premiered": "2010-09-12",
-        "officialSite": "http://www.showcase.ca/lostgirl",
-        "schedule": {
-            "time": "22:00",
-            "days": [
-                "Sunday"
-            ]
-        },
-        "rating": {
-            "average": 8.1
-        },
-        "weight": 97,
-        "network": {
-            "id": 6,
-            "name": "Showcase",
-            "country": {
-                "name": "Canada",
-                "code": "CA",
-                "timezone": "America/Halifax"
-            }
-        },
-        "webChannel": null,
-        "externals": {
-            "tvrage": 26401,
-            "thetvdb": 182061,
-            "imdb": "tt1429449"
-        },
-        "image": {
-            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/137.jpg",
-            "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/137.jpg"
-        },
-        "summary": "<p><b>Lost Girl</b> follows supernatural seductress Bo, a Succubus who feeds on the sexual energy of humans. Growing up with human parents, Bo had no reason to believe she was anything other than the girl next door — until she drained her boyfriend to death in their first sexual encounter. Now she has hit the road alone and afraid. <br /> She discovers she is one of the Fae, creatures of legend and folklore, who pass as humans while feeding off them secretly and in different ways, as they have for millennia. Relieved yet horrified to find out that she is not alone, Bo decides to take the middle path between the humans and the Fae while embarking on a personal mission to unlock the secrets of her origin.</p><p>With the help of her human sidekick, Kenzi, and Dyson, a sexy police detective, Bo takes on a challenge every week helping a Fae or human client who comes to her to solve a mystery, or to right a wrong.</p>",
-        "updated": 1587112172,
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/shows/12"
-            },
-            "previousepisode": {
-                "href": "http://api.tvmaze.com/episodes/316120"
-            }
-        }
-    },
-    {
-        "id": 13,
-        "url": "http://www.tvmaze.com/shows/13/the-flash",
-        "name": "The Flash",
-        "type": "Scripted",
-        "language": "English",
-        "genres": [
-            "Drama",
-            "Action",
-            "Science-Fiction"
-        ],
-        "status": "Running",
-        "runtime": 60,
-        "premiered": "2014-10-07",
-        "officialSite": "http://www.cwtv.com/shows/the-flash/",
-        "schedule": {
-            "time": "20:00",
-            "days": [
-                "Tuesday"
-            ]
-        },
-        "rating": {
-            "average": 7.9
-        },
         "weight": 100,
         "network": {
-            "id": 5,
-            "name": "The CW",
+            "id": 2,
+            "name": "CBS",
             "country": {
                 "name": "United States",
                 "code": "US",
@@ -700,244 +922,427 @@ export function allShows()
         },
         "webChannel": null,
         "externals": {
-            "tvrage": 36939,
-            "thetvdb": 279121,
-            "imdb": "tt3107288"
+            "tvrage": 38017,
+            "thetvdb": 278125,
+            "imdb": "tt3560084"
         },
         "image": {
-            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/210/527217.jpg",
-            "original": "http://static.tvmaze.com/uploads/images/original_untouched/210/527217.jpg"
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/237/592628.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/237/592628.jpg"
         },
-        "summary": "<p>After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash!</p>",
-        "updated": 1589510669,
+        "summary": "<p><b>NCIS: New Orleans </b>is a drama about the local field office that investigates criminal cases involving military personnel in The Big Easy, a city known for its music, entertainment and decadence. Leading the team is Special Agent Dwayne Pride, a.k.a. \"King,\" a native of New Orleans who is driven by his need to do what is right. Working with Pride is Special Agent Christopher LaSalle, who plays hard but works harder and former ATF agent Sonja Percy, who is still adjusting to the team after years of solo undercover assignments. Supporting them is coroner Dr. Loretta Wade, who is as eccentric as she is smart; her brilliant, quirky Forensic Scientist, Sebastian Lund; and Investigative Computer Specialist Patton Plame, an animated and talented hacker. New to the team is Special Agent Tammy Gregorio, a tough, acerbic FBI agent with a mysterious past in New Orleans, who is sent from D.C. to investigate the NCIS team, but also work with Pride when high-risk cases threaten the city. This colorful city that harbors a dark side is a magnet for service personnel on leave, and when overindulgence is followed by trouble, Pride's team is at its best</p>",
+        "updated": 1587391990,
         "_links": {
             "self": {
-                "href": "http://api.tvmaze.com/shows/13"
+                "href": "http://api.tvmaze.com/shows/45"
             },
             "previousepisode": {
-                "href": "http://api.tvmaze.com/episodes/1808699"
-            }
-        }
-    },
-    {
-        "id": 14,
-        "url": "http://www.tvmaze.com/shows/14/continuum",
-        "name": "Continuum",
-        "type": "Scripted",
-        "language": "English",
-        "genres": [
-            "Drama",
-            "Crime",
-            "Science-Fiction"
-        ],
-        "status": "Ended",
-        "runtime": 60,
-        "premiered": "2012-05-27",
-        "officialSite": "http://www.showcase.ca/Continuum",
-        "schedule": {
-            "time": "21:00",
-            "days": [
-                "Sunday"
-            ]
-        },
-        "rating": {
-            "average": 8.2
-        },
-        "weight": 94,
-        "network": {
-            "id": 6,
-            "name": "Showcase",
-            "country": {
-                "name": "Canada",
-                "code": "CA",
-                "timezone": "America/Halifax"
-            }
-        },
-        "webChannel": null,
-        "externals": {
-            "tvrage": 30789,
-            "thetvdb": 258171,
-            "imdb": "tt1954347"
-        },
-        "image": {
-            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/184.jpg",
-            "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/184.jpg"
-        },
-        "summary": "<p><b>Continuum </b>is a one-hour police drama centered on Kiera Cameron, a regular cop from 65 years in the future who finds herself trapped in present day Vancouver. She is alone, a stranger in a strange land, and has eight of the most ruthless criminals from the future, known as Liber8, loose in the city.</p><p>Lucky for Kiera, through the use of her CMR (cellular memory recall), a futuristic liquid chip technology implanted in her brain, she connects with Alec Sadler, a seventeen-year-old tech genius. When Kiera calls and Alec answers, a very unique partnership begins.</p><p>Kiera's first desire is to get \"home.\" But until she figures out a way to do that, she must survive in our time period and use all the resources available to her to track and capture the terrorists before they alter history enough to change the course of the future. After all, what's the point of going back if the future isn't the one you left?</p>",
-        "updated": 1573153509,
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/shows/14"
-            },
-            "previousepisode": {
-                "href": "http://api.tvmaze.com/episodes/228308"
-            }
-        }
-    },
-    {
-        "id": 15,
-        "url": "http://www.tvmaze.com/shows/15/constantine",
-        "name": "Constantine",
-        "type": "Scripted",
-        "language": "English",
-        "genres": [
-            "Drama",
-            "Action",
-            "Horror"
-        ],
-        "status": "Ended",
-        "runtime": 60,
-        "premiered": "2014-10-24",
-        "officialSite": "https://www.nbc.com/constantine",
-        "schedule": {
-            "time": "20:00",
-            "days": [
-                "Friday"
-            ]
-        },
-        "rating": {
-            "average": 7.5
-        },
-        "weight": 84,
-        "network": {
-            "id": 1,
-            "name": "NBC",
-            "country": {
-                "name": "United States",
-                "code": "US",
-                "timezone": "America/New_York"
-            }
-        },
-        "webChannel": null,
-        "externals": {
-            "tvrage": 38109,
-            "thetvdb": 273690,
-            "imdb": "tt3489184"
-        },
-        "image": {
-            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/154.jpg",
-            "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/154.jpg"
-        },
-        "summary": "<p>Based on the wildly popular comic book series \"Hellblazer\" from DC Comics, seasoned demon hunter and master of the occult John Constantine is armed with a ferocious knowledge of the dark arts and a wickedly naughty wit. He fights the good fight - or at least he did. With his soul already damned to hell, he's decided to abandon his campaign against evil until a series of events thrusts him back into the fray, and he'll do whatever it takes to protect the innocent. With the balance of good and evil on the line‎, <b>Constantine </b>will use his skills to travel the country, find the supernatural terrors that threaten our world and send them back where they belong. After that, who knows... maybe there's hope for him and his soul after all.</p>",
-        "updated": 1573607936,
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/shows/15"
-            },
-            "previousepisode": {
-                "href": "http://api.tvmaze.com/episodes/122719"
-            }
-        }
-    },
-    {
-        "id": 16,
-        "url": "http://www.tvmaze.com/shows/16/penny-dreadful",
-        "name": "Penny Dreadful",
-        "type": "Scripted",
-        "language": "English",
-        "genres": [
-            "Horror",
-            "Thriller",
-            "Supernatural"
-        ],
-        "status": "Ended",
-        "runtime": 60,
-        "premiered": "2014-05-11",
-        "officialSite": "http://www.sho.com/penny-dreadful",
-        "schedule": {
-            "time": "21:00",
-            "days": [
-                "Sunday"
-            ]
-        },
-        "rating": {
-            "average": 8.3
-        },
-        "weight": 98,
-        "network": {
-            "id": 9,
-            "name": "Showtime",
-            "country": {
-                "name": "United States",
-                "code": "US",
-                "timezone": "America/New_York"
-            }
-        },
-        "webChannel": null,
-        "externals": {
-            "tvrage": 34172,
-            "thetvdb": 265766,
-            "imdb": "tt2628232"
-        },
-        "image": {
-            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/48/122237.jpg",
-            "original": "http://static.tvmaze.com/uploads/images/original_untouched/48/122237.jpg"
-        },
-        "summary": "<p>Some of literature's most terrifying characters, including Dr. Frankenstein and his monster, Dorian Gray, and iconic figures from the novel Dracula are lurking in the darkest corners of Victorian London. They are joined by a core of original characters in a complex, frightening new narrative. <b>Penny Dreadful </b>is a psychological thriller filled with dark mystery and suspense, where personal demons from the past can be stronger than vampires, evil spirits and immortal beasts.</p>",
-        "updated": 1573154238,
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/shows/16"
-            },
-            "previousepisode": {
-                "href": "http://api.tvmaze.com/episodes/766196"
-            }
-        }
-    }
-    ]
-}
-
-export function show()
-{
-    return {
-        "id": 47731,
-        "url": "http://www.tvmaze.com/shows/47731/true-north",
-        "name": "True North",
-        "type": "Documentary",
-        "language": "English",
-        "genres": [],
-        "status": "Running",
-        "runtime": 30,
-        "premiered": "2013-09-30",
-        "officialSite": "https://www.bbc.co.uk/programmes/b03vpvqb",
-        "schedule": {
-            "time": "22:45",
-            "days": [
-                "Monday"
-            ]
-        },
-        "rating": {
-            "average": null
-        },
-        "weight": 88,
-        "network": {
-            "id": 389,
-            "name": "BBC One Northern Ireland",
-            "country": {
-                "name": "United Kingdom",
-                "code": "GB",
-                "timezone": "Europe/London"
-            }
-        },
-        "webChannel": null,
-        "externals": {
-            "tvrage": null,
-            "thetvdb": null,
-            "imdb": null
-        },
-        "image": null,
-        "summary": "<p>Series of documentaries looking at life in modern-day Northern Ireland.</p>",
-        "updated": 1588386628,
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/shows/47731"
-            },
-            "previousepisode": {
-                "href": "http://api.tvmaze.com/episodes/1855683"
+                "href": "http://api.tvmaze.com/episodes/1822087"
             }
         },
         "_embedded": {
-            "cast": []
+            "cast": [
+                {
+                    "person": {
+                        "id": 6762,
+                        "url": "http://www.tvmaze.com/people/6762/scott-bakula",
+                        "name": "Scott Bakula",
+                        "country": {
+                            "name": "United States",
+                            "code": "US",
+                            "timezone": "America/New_York"
+                        },
+                        "birthday": "1954-10-09",
+                        "deathday": null,
+                        "gender": "Male",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1279.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1279.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/people/6762"
+                            }
+                        }
+                    },
+                    "character": {
+                        "id": 6995,
+                        "url": "http://www.tvmaze.com/characters/6995/ncis-new-orleans-special-agent-dwayne-cassius-king-pride",
+                        "name": "Special Agent Dwayne Cassius \"King\" Pride",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/83/209611.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/83/209611.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/characters/6995"
+                            }
+                        }
+                    },
+                    "self": false,
+                    "voice": false
+                },
+                {
+                    "person": {
+                        "id": 6765,
+                        "url": "http://www.tvmaze.com/people/6765/rob-kerkovich",
+                        "name": "Rob Kerkovich",
+                        "country": {
+                            "name": "United States",
+                            "code": "US",
+                            "timezone": "America/New_York"
+                        },
+                        "birthday": "1979-08-11",
+                        "deathday": null,
+                        "gender": "Male",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/173/434955.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/173/434955.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/people/6765"
+                            }
+                        }
+                    },
+                    "character": {
+                        "id": 6998,
+                        "url": "http://www.tvmaze.com/characters/6998/ncis-new-orleans-forensic-agent-sebastian-lund",
+                        "name": "Forensic Agent Sebastian Lund",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/83/209609.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/83/209609.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/characters/6998"
+                            }
+                        }
+                    },
+                    "self": false,
+                    "voice": false
+                },
+                {
+                    "person": {
+                        "id": 1259,
+                        "url": "http://www.tvmaze.com/people/1259/cch-pounder",
+                        "name": "CCH Pounder",
+                        "country": {
+                            "name": "Guyana",
+                            "code": "GY",
+                            "timezone": "America/Guyana"
+                        },
+                        "birthday": "1952-12-25",
+                        "deathday": null,
+                        "gender": "Female",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1282.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1282.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/people/1259"
+                            }
+                        }
+                    },
+                    "character": {
+                        "id": 6999,
+                        "url": "http://www.tvmaze.com/characters/6999/ncis-new-orleans-jefferson-parish-coroner-dr-loretta-wade",
+                        "name": "Jefferson Parish Coroner Dr. Loretta Wade",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/83/209610.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/83/209610.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/characters/6999"
+                            }
+                        }
+                    },
+                    "self": false,
+                    "voice": false
+                },
+                {
+                    "person": {
+                        "id": 6763,
+                        "url": "http://www.tvmaze.com/people/6763/lucas-black",
+                        "name": "Lucas Black",
+                        "country": {
+                            "name": "United States",
+                            "code": "US",
+                            "timezone": "America/New_York"
+                        },
+                        "birthday": "1982-11-29",
+                        "deathday": null,
+                        "gender": "Male",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1280.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1280.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/people/6763"
+                            }
+                        }
+                    },
+                    "character": {
+                        "id": 6996,
+                        "url": "http://www.tvmaze.com/characters/6996/ncis-new-orleans-special-agent-christopher-lasalle",
+                        "name": "Special Agent Christopher Lasalle",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/83/209612.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/83/209612.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/characters/6996"
+                            }
+                        }
+                    },
+                    "self": false,
+                    "voice": false
+                },
+                {
+                    "person": {
+                        "id": 37125,
+                        "url": "http://www.tvmaze.com/people/37125/daryl-mitchell",
+                        "name": "Daryl Mitchell",
+                        "country": {
+                            "name": "United States",
+                            "code": "US",
+                            "timezone": "America/New_York"
+                        },
+                        "birthday": "1965-07-16",
+                        "deathday": null,
+                        "gender": "Male",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/16/40796.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/16/40796.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/people/37125"
+                            }
+                        }
+                    },
+                    "character": {
+                        "id": 115376,
+                        "url": "http://www.tvmaze.com/characters/115376/ncis-new-orleans-investigative-computer-specialist-patton-plame",
+                        "name": "Investigative Computer Specialist Patton Plame",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/83/209613.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/83/209613.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/characters/115376"
+                            }
+                        }
+                    },
+                    "self": false,
+                    "voice": false
+                },
+                {
+                    "person": {
+                        "id": 30616,
+                        "url": "http://www.tvmaze.com/people/30616/vanessa-ferlito",
+                        "name": "Vanessa Ferlito",
+                        "country": {
+                            "name": "United States",
+                            "code": "US",
+                            "timezone": "America/New_York"
+                        },
+                        "birthday": "1977-12-28",
+                        "deathday": null,
+                        "gender": "Female",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/3/8418.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/3/8418.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/people/30616"
+                            }
+                        }
+                    },
+                    "character": {
+                        "id": 315130,
+                        "url": "http://www.tvmaze.com/characters/315130/ncis-new-orleans-special-agent-tammy-gregorio",
+                        "name": "Special Agent Tammy Gregorio",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/83/209615.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/83/209615.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/characters/315130"
+                            }
+                        }
+                    },
+                    "self": false,
+                    "voice": false
+                },
+                {
+                    "person": {
+                        "id": 20501,
+                        "url": "http://www.tvmaze.com/people/20501/shalita-grant",
+                        "name": "Shalita Grant",
+                        "country": {
+                            "name": "United States",
+                            "code": "US",
+                            "timezone": "America/New_York"
+                        },
+                        "birthday": "1988-08-28",
+                        "deathday": null,
+                        "gender": "Female",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/15/38401.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/15/38401.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/people/20501"
+                            }
+                        }
+                    },
+                    "character": {
+                        "id": 115580,
+                        "url": "http://www.tvmaze.com/characters/115580/ncis-new-orleans-special-agent-sonja-percy",
+                        "name": "Special Agent Sonja Percy",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/83/209614.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/83/209614.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/characters/115580"
+                            }
+                        }
+                    },
+                    "self": false,
+                    "voice": false
+                },
+                {
+                    "person": {
+                        "id": 6764,
+                        "url": "http://www.tvmaze.com/people/6764/zoe-mclellan",
+                        "name": "Zoe McLellan",
+                        "country": {
+                            "name": "United States",
+                            "code": "US",
+                            "timezone": "America/New_York"
+                        },
+                        "birthday": "1974-11-06",
+                        "deathday": null,
+                        "gender": "Female",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/163/409971.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/163/409971.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/people/6764"
+                            }
+                        }
+                    },
+                    "character": {
+                        "id": 6997,
+                        "url": "http://www.tvmaze.com/characters/6997/ncis-new-orleans-special-agent-meredith-merri-brody",
+                        "name": "Special Agent Meredith \"Merri\" Brody",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1445.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1445.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/characters/6997"
+                            }
+                        }
+                    },
+                    "self": false,
+                    "voice": false
+                },
+                {
+                    "person": {
+                        "id": 7475,
+                        "url": "http://www.tvmaze.com/people/7475/necar-zadegan",
+                        "name": "Necar Zadegan",
+                        "country": {
+                            "name": "Germany",
+                            "code": "DE",
+                            "timezone": "Europe/Busingen"
+                        },
+                        "birthday": "1982-06-20",
+                        "deathday": null,
+                        "gender": "Female",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/88/221309.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/88/221309.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/people/7475"
+                            }
+                        }
+                    },
+                    "character": {
+                        "id": 557315,
+                        "url": "http://www.tvmaze.com/characters/557315/ncis-new-orleans-special-agent-hannah-khoury",
+                        "name": "Special Agent Hannah Khoury",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/170/425153.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/170/425153.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/characters/557315"
+                            }
+                        }
+                    },
+                    "self": false,
+                    "voice": false
+                },
+                {
+                    "person": {
+                        "id": 8407,
+                        "url": "http://www.tvmaze.com/people/8407/charles-michael-davis",
+                        "name": "Charles Michael Davis",
+                        "country": {
+                            "name": "United States",
+                            "code": "US",
+                            "timezone": "America/New_York"
+                        },
+                        "birthday": "1984-12-01",
+                        "deathday": null,
+                        "gender": "Male",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/910.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/910.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/people/8407"
+                            }
+                        }
+                    },
+                    "character": {
+                        "id": 696905,
+                        "url": "http://www.tvmaze.com/characters/696905/ncis-new-orleans-special-agent-quentin-carter",
+                        "name": "Special Agent Quentin Carter",
+                        "image": {
+                            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/245/613585.jpg",
+                            "original": "http://static.tvmaze.com/uploads/images/original_untouched/245/613585.jpg"
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "http://api.tvmaze.com/characters/696905"
+                            }
+                        }
+                    },
+                    "self": false,
+                    "voice": false
+                }
+            ]
         }
     }
 }

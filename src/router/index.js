@@ -6,11 +6,6 @@ Vue.use(VueRouter)
 
   const routes = [
   {
-    path: '/',
-    name: 'Dashboard',
-    component: Dashboard
-  },
-  {
     path: '/about/:id',
     name: 'About',
     // route level code-splitting

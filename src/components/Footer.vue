@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="primary">
+  <v-footer color="primary" class="hidden-sm-and-down">
     <v-col class="white--text">
       &copy;2020 —
       <strong>TvShows Page</strong>

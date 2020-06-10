@@ -1,19 +1,29 @@
 import About from '@/views/About.vue'
-import { shallowMount, createLocalVue } from '@vue/test-utils';
+import { shallowMount } from '@vue/test-utils';
+import Vue from 'vue'
 import Vuetify from 'vuetify'
 import { routes } from '@/router/index';
 import VueRouter from 'vue-router'
-import { show } from '../returnShows'
+import { getShow } from '../returnShows'
 
 describe('Testing Header.vue', () => {
     let aboutWrap;
-    const localVue = createLocalVue();
     const router = new VueRouter({ routes });
 
     beforeEach(() => {
-        localVue.use(Vuetify);
-        aboutWrap = shallowMount(About, { localVue, router })
-        aboutWrap.vm.show = show();
+        Vue.use(Vuetify);
+        aboutWrap = shallowMount(About, {
+            Vue,
+            router,
+            data() {
+                return {
+                    show: getShow(),
+                    crew: null
+                }
+            }
+        })
+        aboutWrap.vm.show = getShow();
+        aboutWrap.vm.crew = aboutWrap.vm.show._embedded.cast;
     })
 
     afterEach(() => {
@@ -42,5 +52,26 @@ describe('Testing Header.vue', () => {
 
     it('it should have a strong element', () => {
         expect(aboutWrap.find('strong').text()).toBe("Official site:")
+    });
+
+    it('should find v-spacer', () => {
+        expect(aboutWrap.html()).toContain("v-spacer-stub")
+    });
+
+    it('should find v-img', () => {
+        expect(aboutWrap.html()).toContain("v-img-stub")
+    });
+
+    it('should find v-row', () => {
+        expect(aboutWrap.html()).toContain("v-row-stub")
+    });
+
+    it('testing data elements', () => {
+        expect(aboutWrap.vm.crew).toBeDefined();
+        expect(aboutWrap.vm.crew).not.toBeNull();
+    });
+
+    it('testing function', () => {
+        expect(aboutWrap.vm.displayShow).toBeDefined();
     });
 })

@@ -2,73 +2,49 @@
   <div class="home">
     <v-container grid-list-xl>
       <v-row>
-        <v-col cols="8">
-          <v-text-field v-model="search" label=" Show Name" outlined class="text-1"></v-text-field>
+        <v-col cols="12" md="8">
+          <v-text-field
+            prepend-inner-icon="mdi-magnify"
+            v-model="search"
+            label=" Show Name"
+            outlined
+            class="text-1"
+            clearable
+            autofocus
+          ></v-text-field>
         </v-col>
       </v-row>
-      <v-layout row v-if="shows">
-        <v-flex xs4 v-for="(show,i) in shows" :key="i">
-          <v-card max-width="374" elevation-15>
-            <v-img v-if="show.show.image" :src="show.show.image.original" aspect-ratio="0.75"></v-img>
-            <v-img v-else src="@/assets/NoImageAvailable.png" aspect-ratio="1"></v-img>
-            <v-card-title v-if="show.show.name">
-              {{show.show.name}}
-              <v-spacer></v-spacer>
-              <div v-if="show.show.language">
-                <v-icon>mdi-volume-high</v-icon>
-                {{show.show.language}}
-              </div>
-            </v-card-title>
 
-            <v-card-text>
-              <v-row align="center" class="mx-0">
-                <div>
-                  <v-rating
-                    v-model="show.show.rating.average"
-                    color="amber"
-                    dense
-                    half-increments
-                    readonly
-                    size="14"
-                    length="10"
-                  >{{show.show.rating.average}}</v-rating>
-                </div>
-                <div
-                  class="grey--text ml-4"
-                  v-if="show.show.rating.average"
-                >{{show.show.rating.average}}</div>
-                <div v-else class="grey--text ml-4">No Rating</div>
-              </v-row>
+      <v-row class="hidden-sm-and-down" v-if="shows">
+        <v-col cols="4" v-for="(show,i) in shows" :key="i">
+          <show-card :show="show.show"></show-card>
+        </v-col>
+      </v-row>
 
-              <v-row align="center" class="mx-0" v-if="show.show.genres">
-                <div class="my-4 subtitle-1" v-for="(genre,j) in show.show.genres" :key="j">
-                  <v-icon>mdi-tag</v-icon>
-                  {{genre}}
-                </div>
-              </v-row>
-            </v-card-text>
+      <v-row class="hidden-sm-and-up">
+        <v-col cols="6" v-for="(show,i) in shows" :key="i">
+          <show-card :show="show.show"></show-card>
+        </v-col>
+      </v-row>
 
-            <v-divider class="mx-4"></v-divider>
-
-            <v-card-actions>
-              <v-btn
-                v-if="show.show.id"
-                color="orange"
-                text
-                :href="`/about/${show.show.id}`"
-              >View Details</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-flex>
-      </v-layout>
+      <v-row class="hidden-md-and-up hidden-xs-only">
+        <v-col cols="6" v-for="(show,i) in shows" :key="i">
+          <show-card :show="show.show"></show-card>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
 
 <script>
 import { getShowsByName } from "@/service/shows.service.js";
+import ShowCard from "../components/ShowCard";
 export default {
   name: "Search",
+
+  components: {
+    ShowCard
+  },
 
   data: () => ({
     shows: null,
@@ -79,7 +55,7 @@ export default {
       .then(resp => {
         this.shows = resp.data;
       })
-      .catch(err =>this.alertErr(err));
+      .catch(err => this.alertErr(err));
   },
   watch: {
     search() {
@@ -90,11 +66,9 @@ export default {
         .catch(err => this.alertErr(err));
     }
   },
-  methods:
-  {
-    alertErr(err)
-    {
-      alert(err)
+  methods: {
+    alertErr(err) {
+      alert(err);
     }
   }
 };
