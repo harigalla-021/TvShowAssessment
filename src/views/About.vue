@@ -16,7 +16,7 @@
         </v-col>
       </v-layout>
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12">
           <v-col>
             <div v-if="show.language">
               <v-icon class="display-1">mdi-volume-high</v-icon>
@@ -34,8 +34,8 @@
             <div v-if="show.rating.average">{{show.rating.average}}</div>
             <div v-else>No Rating</div>
           </v-col>
-          <div v-if="show.genres">
-            <v-col v-for="(genre,i) in show.genres" :key="i">
+          <div v-if="show.genres" class="d-inline align-right">
+            <v-col v-for="(genre,i) in show.genres" :key="i" class="d-inline">
               <v-chip class="ma-2" color="white" label text-color="black">
                 <v-icon left>mdi-tag</v-icon>
                 {{genre}}

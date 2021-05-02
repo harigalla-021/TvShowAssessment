@@ -23,9 +23,5 @@ export default {
     AppHeader,
     AppFooter
   },
-
-  data: () => ({
-    //
-  })
 };
 </script>
