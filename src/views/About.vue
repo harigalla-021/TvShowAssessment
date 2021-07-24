@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <v-container fluid v-if="show">
+    <v-container fluid v-if="show && !showSpinner">
       <v-layout row>
         <v-col cols="12">
           <h1 class="display-3">{{show.name}}</h1>
@@ -90,6 +90,7 @@
         </v-layout>
       </v-container>
     </v-container>
+    <div v-if="showSpinner" class="spinner"></div>
   </div>
 </template>
 
@@ -101,18 +102,21 @@ export default {
 
   data: () => ({
     show: null,
-    crew: null
+    crew: null,
+    showSpinner: false,
   }),
   created() {
     this.displayShow();
   },
   methods: {
     displayShow() {
+      this.showSpinner = true;
       getShow(this.$route.params.id) // getting show data using id from url
         .then(resp => {
           this.show = resp.data;
           if (resp.data._embedded) {
             this.crew = resp.data._embedded.cast;
+            this.showSpinner = false;
           }
         })
         .catch(err => alert(err));
@@ -120,3 +124,22 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.spinner {
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  height: 120px;
+  width: 120px;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
